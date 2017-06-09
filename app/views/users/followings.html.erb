@@ -12,9 +12,7 @@
 " alt="">
       </div>
     </div>
-    
-<%= render 'relationships/follow_button', user: @user %>
-
+    <%= render 'relationships/follow_button', user: @user %>
   </aside>
   <div class="col-xs-8">
     <ul class="nav nav-tabs nav-justified">
@@ -47,7 +45,7 @@ Followers <span class="badge">
 </li>
     </ul>
     
-<%= render 'microposts/microposts', microposts: @microposts, user: @user %>
+<%= render 'users', users: @followings %>
 
   </div>
 </div>
